@@ -1,5 +1,8 @@
 package ru.yandex.practicum.contacts.model;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class ContactType {
 
     public static final String TELEGRAM = "telegram";
@@ -11,6 +14,7 @@ public class ContactType {
     public static final String EMAIL = "email";
 
     public static String[] getContactTypes() {
+        return new String[]{TELEGRAM, WHATS_APP, VIBER, SIGNAL, THREEMA, PHONE, EMAIL};
         // метод должен возвращать массив строк, перечисленных выше
     }
 }
